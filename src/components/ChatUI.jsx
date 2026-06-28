@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import "./ChatUI.css";
 import ReactMarkdown from "react-markdown";
 
-const API_URL = "http://127.0.0.1:5000/ask";
+const API_URL =
+  `${import.meta.env.VITE_API_URL}/ask`;
 
 function newId() {
   return (
